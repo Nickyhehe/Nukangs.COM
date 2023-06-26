@@ -1,0 +1,197 @@
+﻿.kategori-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Mengatur konten menjadi di tengah */
+    gap: 20px;
+    
+}
+
+
+
+.lblser {
+    text-align: center;
+    font-size: 60px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+    color: #FFBF00;
+    display: block;
+    font-weight: bold;
+}
+
+.insert-btn {
+    align-items: center;
+    text-align: center;
+}
+
+.insert-btns{
+    border-radius: 7px;
+    background-color: transparent;
+    padding: 5px 12px;
+    transition: 0.55s;
+}
+
+.insert-btns:hover{
+    background-color: gold;
+    color: white;
+    border-color: gold;
+
+}
+
+.btn-style {
+    background:white;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 5px 20px;
+    border: none;
+}
+
+
+
+.kategori-item {
+    flex-basis: 25%; /* Mengatur lebar setiap item menjadi 25% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.role-name {
+    margin-top: 10px;
+}
+
+
+
+.kategori-item:hover .kategori-buttons button {
+    background-color: #fefed0;
+    color: white;
+}
+
+        .kategori-item button:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #fefed0;
+            transition: width 0.3s;
+        }
+
+        .kategori-item button:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            background-color: #fefed0;
+            transition: width 0.3s;
+        }
+
+        .kategori-item button:hover::before,
+        .kategori-item button:hover::after {
+            z-index: -1;
+        }
+
+        .kategori-item button:hover::before {
+            transition-delay: 0.15s;
+        }
+
+        .kategori-item button:hover::after {
+            transition-delay: 0s;
+        }
+
+        .kategori-item button:hover::before,
+        .kategori-item button:hover::after {
+            width: 50%;
+        }
+
+.kategori-column {
+    /* Gaya teks */
+  
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-update {
+    color: #FFBF00;
+    border: 1.5px solid #FFBF00;
+}
+
+.btn-delete {
+    color: red;
+    border: 1.5px solid red;
+}
+
+.btn-view {
+    color: dodgerblue;
+    border: 1.5px solid dodgerblue;
+}
+
+
+.kategori-item img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 20px;
+
+}
+
+.full-image {
+ 
+    height: 100vh;
+    background-image: url(../Roles/homebg.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    top:-29px;
+}
+
+    .full-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Ubah angka transparansi (0.5) sesuai kebutuhan */
+    }
+
+.content-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test-lbl {
+    font-size: 42px;
+    font-weight: 600;
+    color: ghostwhite;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.explore-btn {
+    background-color: transparent;
+    border: 2px solid ghostwhite;
+    color: ghostwhite;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 250px;
+    height: 70px;
+    font-weight: bold;
+}
